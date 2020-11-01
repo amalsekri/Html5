@@ -1,0 +1,60 @@
+body{
+   width: 1200px;
+    margin:0 auto; /* pour centrer tt les éléments par rapport a l'espace de l'ordi*/
+    font-family: "Montserrat", sans-serif; /*Changer la police*/
+}
+
+a
+{
+    color :gray; /*Changer la couleur*/
+    font-size: 15px; /*Changer la taille de l'ecriture*/
+    font-family: "Montserrat", sans-serif; /*Changer la police*/
+    text-decoration: none; /* Enlever la décoration du texte (ex:soulignement)*/
+    margin-left: 20px; /*l'espace entre les éléments*/
+
+}
+nav
+{
+    float : right; /* pour flotter un élément c-à-d de mettre à droite de la page*/
+   margin-right: 20px;
+   /* margin-top: 35px; */
+   line-height: 100px; 
+}
+h1{
+    float:left;
+  
+}
+.bloctt{
+    width: 1000px;
+    margin:30px auto;
+}
+.ligne,footer
+{
+background-color: darkslategray;
+height: 50px;
+}
+main{
+    clear:both;
+    
+    margin: 0 auto;
+}
+.bloc2{
+    width:300px;
+    text-align: center;
+    
+}
+.bloc1{
+    float:left;
+}
+.bloc2{
+    float:left;
+}
+.blocC,.blocB{
+    clear: both;
+}
+footer{
+    clear: both;
+}
+h3{
+    color:darkslategray;
+}

@@ -1,0 +1,35 @@
+body{
+    width: 1300px;
+    margin:0 auto; /* pour centrer tt les éléments par rapport a l'espace de l'ordi*/
+    font-family: "Montserrat", sans-serif; /*Changer la police*/
+}
+
+header{
+    text-align: center;
+    padding: 20px;
+    /*width: 500px;*/
+}
+
+
+.blockA{
+    /* padding: 60px;*/
+    /* display: flex; */
+    margin: 3²² 0px;
+    /* justify-content: space-between; */
+}
+
+
+.block1{
+    /* margin: auto; */
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px gainsboro;
+    width: 350px;
+    display:inline-block;
+    margin-left: 10px;
+    
+}
+p{
+    padding: 20px;
+    color: gray;
+}

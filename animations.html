@@ -6,9 +6,10 @@
     <title>Document</title>
     <style>
         /* ici je peux ecrire des proprietes css */
-        // Little Circles Bounce
+        /* // Little Circles Bounce */
 #anim-two{
   text-align: center;
+}
  /* padding-top: 150px; */
   ul{
        text-align: center;
@@ -26,26 +27,40 @@
       display: inline-block;
       margin: 0 5px;
       transform: translateY(-30px);
-      animation: bounce-balls 1.2s cubic-bezier(0.245, 0.325, 0.510, 1.305) infinite alternate
-      &:nth-child(1)
-        background: orange
-        animation-delay: .6s
-      &:nth-child(2)
-        background: coral
-        animation-delay: .7s
-      &:nth-child(3)
-        background: darksalmon
-        animation-delay: .8s
-      &:nth-child(4)
-        background: indianred
-        animation-delay: .6s
-      &:nth-child(5)
-        background: lightcoral
-        animation-delay: .6s
-      &:nth-child(6)
-        background: lightcoral
-        animation-delay: .7s
+      animation: bounce-balls 1.2s cubic-bezier(0.245, 0.325, 0.510, 1.305) infinite alternate;
     }
+      li:nth-child(1)
+      {
+           background: orange;
+        animation-delay: .6s;
+      }
+       
+      li:nth-child(2){
+  background: coral;
+        animation-delay: 0.7s;
+      }
+      
+      li:nth-child(3){
+     background: darksalmon;
+        animation-delay: 0.8s;
+      }
+      
+      li:nth-child(4){
+   background: indianred;
+        animation-delay: .6s;
+      }
+     
+      li:nth-child(5){
+ background: lightcoral;
+        animation-delay: .6s;
+      }
+       
+      li:nth-child(6){
+        background: lightcoral;
+        animation-delay: .7s;
+      }
+        
+    
 @keyframes bounce-balls{
      30%{
            transform: translateY(-30px);
@@ -63,8 +78,8 @@
        transform: translateY(195px);
 
   }
-   
-}
+}!%
+</style>
  
  </head>
  <body>
@@ -83,4 +98,23 @@
     </div>
 
 </body>
-</html>
+</html>§*    
+@keyframes bounce-balls{
+     30%{
+           transform: translateY(-30px);
+     }
+  
+  60%{
+        transform: translateY(205px);
+  }
+  
+  80%{
+        transform: translateY(190px);
+  }
+  
+  100%{
+       transform: translateY(195px);
+
+  }
+}
+%

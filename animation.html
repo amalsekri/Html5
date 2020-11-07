@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformations et transitions</title>
+    <style>
+        .rotate{
+            transform: rotate(-20deg);
+        }
+        .skew{
+            transform:skew(30deg,10deg); /*La fonction skew() de la propriété transform permet de déformer un élément skew(anfleX, angleY)*/
+        }
+        div{
+            display: flex;
+        }
+        .transform{
+            transform:rotate(-10deg) skew(50deg,20deg) scale(1.5,1);
+            margin-left:500px;
+            margin-top: 500px;
+        }
+        .rotateTransition{
+            transform:rotate(-20deg);
+            transition-duration: 2s;
+        }
+        .rotateTransition:hover{
+            transform:rotate(0deg);
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+    La transformation : 
+    La transformation est la faculté de modifier un élément
+        - S'aplique à l'image pixélisée de l'élément
+    La transformation se réalise à l'aide de la propriété "transform"
+    Elle peut s'effectuer de différentes manières :
+        - Rotation
+        - Redimensionnement
+        - Déplacement
+        - Distorsion
+    Par défaut toutes les transformations ont comme point de référence le centre de l'élément (50%, 50%)
+     - Point de départ pour les calculs des transformations
+     - Point modifiable avec la propriété "transform-origin" -->
+     <div>
+        <!-- <div>Exemple distorsion</div> -->
+        <h2 class="skew">Formation Poles S- 1</h2>
+        <!-- <div>Exemple rotation</div> -->
+        <h2 class="rotate">Formation Poles S - 2</h2>
+    </div>
+    <!-- La fonction translate() de la propriété transform permet de déplacer un élément en x et y par rapport à sa position d'origine
+        - translate (x,y)
+    La fonction scale() de la propriété transform permet de redimensionner un élément
+        scale(2) double la dimension d'un élément
+    Il est possible de cumuler ces différentes transformations
+    Le résultat dépend dans certains cas de l'ordre dans lequel sont appliquées les transformations. -->
+    <div class="transform">Formation Poles S - 3</div>
+    <!-- transitions
+    Permet la réalisation d'un effet de style lors d'un changement d'état d'une propriété suite à un évènement.
+    Les transitions peuvent être déclenchées lors du survol de l'élément, du gain ou de la perte du focus à l'aide des pseudo-classes comme :hover :active ou :focus
+    Une transition est définie à l'aide de la propriété "transition" -->
+    <!-- Le nom de la classe est écrit en "camelcase"  -->
+    <div class="rotateTransition">Formation poles s - 4</div>
+</body>
+</html>

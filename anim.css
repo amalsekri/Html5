@@ -1,0 +1,89 @@
+body{
+    width:1200px;
+    margin:100px auto;
+}
+.rotate div{
+  padding: 4em;
+  
+    border:1px solid lightgray;
+  
+    border-radius:5px;
+     background-color: mediumpurple;
+
+}
+
+
+.rotate p:hover{
+    transform: scale(1.5);
+    transition: 1s;
+}
+.rotate{
+    display: flex;
+    justify-content:center;
+}
+.rotate div{
+    transform:rotate(45deg);
+    transition: all 2s;
+}
+.scale {
+    display: flex;
+}
+.scale div{
+    padding:30px;
+    border:1px solid olivedrab;
+    border-radius: 50%;
+}
+.rotate_2{
+    display: flex;
+}
+.rotate_2 div{
+
+    border:1px solid orange;
+    padding:5em;
+    margin:1em;
+}
+/* {
+    transform: scale(.1) rotate(-90deg);
+    transition: transform 330ms ease-in-out;
+} */
+
+.rotate_2 .item1{
+padding: 5em;
+	background: #fff;
+	border: 5px solid orange;
+	border-radius: 30px;
+	    transition: all 2s; /* transition when the mouse over */
+}
+.rotate_2 .item1:hover {
+	border-color: #333;
+	transform: rotate(1080deg);
+    border-radius: 50%;
+
+}
+.rotate_2 .item2:hover{
+    	padding:5em;
+	transform: rotateX(180deg);
+  
+}
+.rotate_2 .item2{
+    width: 500px;
+    transition: all 1s;
+}
+.rotate_2 .item3:hover{
+    padding:5em;
+transform: rotateY(180deg);
+
+}
+.rotate_2 .item3{
+
+transition: all 1s;
+}
+.rotate_2 .item4:hover{
+    padding:5em;
+transform: rotateZ(180deg);
+
+}
+.rotate_2 .item4{
+
+transition: all 1s;
+}

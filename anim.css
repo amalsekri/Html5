@@ -2,29 +2,26 @@ body{
     width:1200px;
     margin:100px auto;
 }
-.rotate div{
-  padding: 4em;
-  
-    border:1px solid lightgray;
-  
-    border-radius:5px;
-     background-color: mediumpurple;
-
-}
-
-
-.rotate p:hover{
-    transform: scale(1.5);
-    transition: 1s;
-}
 .rotate{
     display: flex;
     justify-content:center;
 }
 .rotate div{
-    transform:rotate(45deg);
-    transition: all 2s;
+  padding: 4em;
+  border:1px solid lightgray;
+  border-radius:5px;
+  background-color: mediumpurple;
+  transform:rotate(45deg);
+    transition: all 1s;
 }
+/* animation */
+.rotate div:hover{
+    transform: scale(1.4);
+    
+}
+
+
+/* scale */
 .scale {
     display: flex;
 }
@@ -32,7 +29,27 @@ body{
     padding:30px;
     border:1px solid olivedrab;
     border-radius: 50%;
+    text-align: center;
 }
+.scale{
+    margin-top: 4em;
+    display: flex;
+    justify-content: center;
+}
+.scale div{
+    width:60px;
+    height: 60px;
+}
+.scale div{
+      transition: all 2s ;
+}
+.scale div:hover{
+    transform: scale(1.5);
+  background-color: coral;
+    border:4px double orange;
+   
+}
+/* rotate */
 .rotate_2{
     display: flex;
 }
@@ -42,10 +59,7 @@ body{
     padding:5em;
     margin:1em;
 }
-/* {
-    transform: scale(.1) rotate(-90deg);
-    transition: transform 330ms ease-in-out;
-} */
+
 
 .rotate_2 .item1{
 padding: 5em;
@@ -61,7 +75,7 @@ padding: 5em;
 
 }
 .rotate_2 .item2:hover{
-    	padding:5em;
+    padding:5em;
 	transform: rotateX(180deg);
   
 }
@@ -80,7 +94,7 @@ transition: all 1s;
 }
 .rotate_2 .item4:hover{
     padding:5em;
-transform: rotateZ(180deg);
+    transform: rotateZ(180deg);
 
 }
 .rotate_2 .item4{
